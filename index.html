@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LSP-P1 SMKN 4 Kendari</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- ==================== TOP BAR ==================== -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-left">
+
+                <span>📞 (0401) 3193756</span>
+                <span>📍 Jl. Kijang No.3, Kendari</span>
+            </div>
+            <div class="top-bar-right">
+                <a href="https://www.instagram.com/lspsmik/" target="_blank" title="Instagram">F</a>
+                <a href="https://www.instagram.com/lspsmik/" target="_blank" title="Instagram">ig</a>
+                <a href="https://www.youtube.com/@LSPsmkn4kendari" target="_blank" title="YouTube">YT</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== NAVBAR ==================== -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="#home" class="logo">
+                <!-- ====== LOGO SVG SMKN 4 KENDARI ====== -->
+                <img src="img/logo.png" alt="Logo" style="height:60px;">
+                <div class="logo-text">
+                    <h1>LSP-P1</h1>
+                    <span>SMKN 4 Kendari</span>
+                </div>
+            </a>
+
+            <div class="nav-menu" id="navMenu">
+                <a href="#home" class="active">Home</a>
+                <a href="#tentang">Tentang Kami</a>
+                <a href="#skema">Skema Sertifikasi</a>
+                <a href="#team">Galeri Team</a>
+                <a href="#kontak">Kontak Kami</a>
+                <a href="#" class="btn-login" id="loginBtn" onclick="openLogin()">🔐 Login</a>
+            </div>
+
+            <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">🏆 LEMBIGA SERTIFIKASI PROFESI</div>
+                <h2>
+                    Wujudkan <span class="highlight">Kompetensi</span> dan Raih <span
+                        class="highlight">Sertifikasi</span> Profesional
+                </h2>
+                <p>
+                    LSP-P1 SMKN 4 Kendari hadir sebagai lembaga sertifikasi profesi pihak pertama yang berkomitmen
+                    menghasilkan tenaga kerja kompeten, bersertifikat, dan siap bersaing di dunia industri nasional
+                    maupun internasional.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#skema" class="btn-primary">📋 Lihat Skema Sertifikasi</a>
+                    <a href="#tentang" class="btn-secondary">ℹ️ Pelajari Lebih Lanjut</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <h3>50+</h3>
+                        <p>Lulusan Tersertifikasi</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>8</h3>
+                        <p>Skema Sertifikasi</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>4+</h3>
+                        <p>Asesor Kompeten</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <svg class="hero-illustration" viewBox="0 0 400 350" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Certificate -->
+                    <rect x="80" y="40" width="240" height="180" rx="10" fill="rgba(255,255,255,0.15)"
+                        stroke="rgba(255,255,255,0.3)" stroke-width="2" />
+                    <rect x="95" y="55" width="210" height="150" rx="5" fill="rgba(255,255,255,0.1)" />
+
+                    <!-- Certificate header lines -->
+                    <line x1="140" y1="80" x2="260" y2="80" stroke="rgba(245,166,35,0.8)" stroke-width="3" />
+                    <text x="200" y="78" text-anchor="middle" font-family="Arial" font-size="10"
+                        fill="rgba(255,255,255,0.9)" font-weight="bold">SERTIFIKAT KOMPETENSI</text>
+
+                    <!-- Body lines -->
+                    <line x1="120" y1="105" x2="280" y2="105" stroke="rgba(255,255,255,0.3)" stroke-width="1.5" />
+                    <line x1="120" y1="120" x2="260" y2="120" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
+                    <line x1="120" y1="135" x2="270" y2="135" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
+                    <line x1="120" y1="150" x2="240" y2="150" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
+                    <line x1="120" y1="165" x2="255" y2="165" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
+                    <line x1="120" y1="180" x2="200" y2="180" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
+
+                    <!-- Seal -->
+                    <circle cx="280" cy="180" r="25" fill="rgba(245,166,35,0.6)" stroke="rgba(245,166,35,0.8)"
+                        stroke-width="2" />
+                    <circle cx="280" cy="180" r="18" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="1" />
+                    <text x="280" y="184" text-anchor="middle" font-family="Arial" font-size="8" fill="white"
+                        font-weight="bold">LSP</text>
+
+                    <!-- Floating elements -->
+                    <circle cx="50" cy="250" r="30" fill="rgba(245,166,35,0.2)" />
+                    <text x="50" y="255" text-anchor="middle" font-size="20">✅</text>
+
+                    <circle cx="350" cy="80" r="25" fill="rgba(255,255,255,0.1)" />
+                    <text x="350" y="85" text-anchor="middle" font-size="16">🎓</text>
+
+                    <circle cx="330" cy="280" r="20" fill="rgba(245,166,35,0.15)" />
+                    <text x="330" y="285" text-anchor="middle" font-size="14">⭐</text>
+
+                    <circle cx="70" cy="120" r="18" fill="rgba(255,255,255,0.08)" />
+                    <text x="70" y="125" text-anchor="middle" font-size="12">🏅</text>
+
+                    <!-- Decorative dots -->
+                    <circle cx="150" cy="280" r="4" fill="rgba(245,166,35,0.4)" />
+                    <circle cx="170" cy="290" r="3" fill="rgba(255,255,255,0.3)" />
+                    <circle cx="230" cy="270" r="4" fill="rgba(245,166,35,0.3)" />
+                    <circle cx="250" cy="285" r="3" fill="rgba(255,255,255,0.2)" />
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== TENTANG KAMI ==================== -->
+    <section class="about" id="tentang">
+        <div class="container">
+            <div class="section-title">
+                <h2>Tentang Kami</h2>
+                <p>Mengenal lebih dekat LSP-P1 SMKN 4 Kendari sebagai lembaga sertifikasi profesi terpercaya</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-image">
+                    <div class="about-image-box">
+                        <img src="img/logo.png" alt="Logo" style="height:200px;">
+                    </div>
+                    <div class="about-floating-card">
+                        <div class="icon-circle">🏅</div>
+                        <div>
+                            <h4>Terakreditasi</h4>
+                            <p>Badan Nasional Sertifikasi Profesi</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <h3>Lembaga Sertifikasi Profesi Pihak Pertama (LSP-P1)</h3>
+                    <p>
+                        LSP-P1 SMKN 4 Kendari adalah lembaga sertifikasi profesi pihak pertama yang didirikan oleh SMKN
+                        4 Kendari dan telah mendapat lisensi dari Badan Nasional Sertifikasi Profesi (BNSP).
+                    </p>
+                    <p>
+                        Kami berkomitmen untuk melakukan sertifikasi kompetensi bagi siswa, lulusan, maupun masyarakat
+                        umum sesuai dengan standar kompetensi kerja nasional Indonesia (SKKNI).
+                    </p>
+                    <div class="about-features">
+                        <div class="about-feature-item">
+                            <span class="check">✓</span>
+                            Terlisensi BNSP
+                        </div>
+                        <div class="about-feature-item">
+                            <span class="check">✓</span>
+                            Asesor Kompeten
+                        </div>
+                        <div class="about-feature-item">
+                            <span class="check">✓</span>
+                            TUG Bersertifikat
+                        </div>
+                        <div class="about-feature-item">
+                            <span class="check">✓</span>
+                            Standar SKKNI
+                        </div>
+                        <div class="about-feature-item">
+                            <span class="check">✓</span>
+                            Proses Transparan
+                        </div>
+                        <div class="about-feature-item">
+                            <span class="check">✓</span>
+                            Sertifikat BNSP
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== VISI & MISI ==================== -->
+    <section class="visi-misi">
+        <div class="container">
+            <div class="vm-grid">
+                <div class="vm-card">
+                    <div class="vm-icon">👁️</div>
+                    <h3>Visi</h3>
+                    <p>
+                        Menjadi Lembaga Sertifikasi Profesi yang unggul, terpercaya, dan diakui secara nasional dalam
+                        menghasilkan tenaga kerja kompeten yang berdaya saing tinggi di era globalisasi.
+                    </p>
+                </div>
+                <div class="vm-card">
+                    <div class="vm-icon">🎯</div>
+                    <h3>Misi</h3>
+                    <ul>
+                        <li>Menyelenggarakan uji kompetensi sesuai standar SKKNI</li>
+                        <li>Meningkatkan mutu dan kompetensi lulusan SMKN 4 Kendari</li>
+                        <li>Menjaga kredibilitas dan mutu penyelenggaraan sertifikasi</li>
+                        <li>Mendorong budaya kerja profesional dan kompeten</li>
+                        <li>Berkolaborasi dengan dunia usaha dan industri (DUDI)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SKEMA SERTIFIKASI ==================== -->
+    <section class="skema" id="skema">
+        <div class="container">
+            <div class="section-title">
+                <h2>Skema Sertifikasi</h2>
+                <p>Berbagai skema sertifikasi kompetensi yang tersedia sesuai kebutuhan industri</p>
+            </div>
+            <div class="skema-grid">
+                <div class="skema-card">
+                    <div class="skema-icon">💻</div>
+                    <h3>Teknik Komputer dan Jaringan</h3>
+                    <span class="skema-code">Kode: SKKNI-2024-TKJ</span>
+                    <p>Sertifikasi kompetensi di bidang instalasi jaringan komputer, administrasi server, dan keamanan
+                        jaringan.</p>
+                    <a href="#" class="btn-skema">Detail Skema →</a>
+                </div>
+                <div class="skema-card">
+                    <div class="skema-icon">📊</div>
+                    <h3>Rekayasa Perangkat Lunak dan GIM</h3>
+                    <span class="skema-code">Kode: SKKNI-2024-PPLG</span>
+                    <p>Sertifikasi kompetensi di Bidang Software Development - Pemrograman.</p>
+                    <a href="#" class="btn-skema">Detail Skema →</a>
+                </div>
+                <div class="skema-card">
+                    <div class="skema-icon">🏢</div>
+                    <h3>Desain Komunikasi Visual</h3>
+                    <span class="skema-code">Kode: SKKNI-2024-DKV</span>
+                    <p>Sertifikasi kompetensi di bidang penyusunan job description desainer.
+                    </p>
+                    <a href="#" class="btn-skema">Detail Skema →</a>
+                </div>
+                <div class="skema-card">
+                    <div class="skema-icon">🛒</div>
+                    <h3>Brocasting dan Perfilman</h3>
+                    <span class="skema-code">Kode: SKKNI-2024-BRF</span>
+                    <p>Sertifikasi kompetensi di bidang Penyiar Televisi dan Kamerawan Televisi, Editing Film.</p>
+                    <a href="#" class="btn-skema">Detail Skema →</a>
+                </div>
+                <div class="skema-card">
+                    <div class="skema-icon">🍳</div>
+                    <h3> Kriya kayu </h3>
+                    <span class="skema-code">Kode: SKKNI-2024-KY</span>
+                    <p>Sertifikasi kompetensi di bidang pengolahan makanan, pastry & bakery, serta hygiene sanitasi.</p>
+                    <a href="#" class="btn-skema">Detail Skema →</a>
+                </div>
+                <div class="skema-card">
+                    <div class="skema-icon">🎨</div>
+                    <h3>Kriya Tekstil</h3>
+                    <span class="skema-code">Kode: SKKNI-2024-KT</span>
+                    <p>Sertifikasi kompetensi di bidang desain grafis, animasi, videografi, dan produksi konten
+                        digital.
+                    </p>
+                    <a href="#" class="btn-skema">Detail Skema →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== GALERI TEAM ==================== -->
+    <section class="team" id="team">
+        <div class="container">
+            <div class="section-title">
+                <h2>Galeri Team</h2>
+                <p>Tim profesional yang berdedikasi dalam penyelenggaraan sertifikasi kompetensi</p>
+            </div>
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="team-photo">
+                        <div class="avatar-placeholder">👨‍💼</div>
+                    </div>
+                    <div class="team-info">
+                        <h4>Mursalim,S.pd., M.Pd</h4>
+                        <div class="position">Ketua LSP-P1</div>
+                        <div class="role">-</div>
+                        <div class="team-socials">
+                            <a href="#">in</a>
+                            <a href="#">✉</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <div class="team-photo">
+                        <div class="avatar-placeholder">👩‍💼</div>
+                    </div>
+                    <div class="team-info">
+                        <h4>Dr. Rahmawati Nusi, S.Pd.,M.Pd</h4>
+                        <div class="position">Sekretaris LSP</div>
+                        <div class="role">Wakil Kepala Sekolah</div>
+                        <div class="team-socials">
+                            <a href="#">in</a>
+                            <a href="#">✉</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <div class="team-photo">
+                        <div class="avatar-placeholder">👨‍🏫</div>
+                    </div>
+                    <div class="team-info">
+                        <h4>Yogi Pratama, S.Kom</h4>
+                        <div class="position">Ketua Unit Sertifikasi</div>
+                        <div class="role">Asesor TKJ</div>
+                        <div class="team-socials">
+                            <a href="#">in</a>
+                            <a href="#">✉</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <div class="team-photo">
+                        <div class="avatar-placeholder">👩‍🏫</div>
+                    </div>
+                    <div class="team-info">
+                        <h4>Iswuri Handayani,S.Kom.,M.Kom</h4>
+                        <div class="position">Asesor RPL</div>
+                        <div class="role">Guru Produktif RPL</div>
+                        <div class="team-socials">
+                            <a href="#">in</a>
+                            <a href="#">✉</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <div class="team-photo">
+                        <div class="avatar-placeholder">👨‍💻</div>
+                    </div>
+                    <div class="team-info">
+                        <h4>Mutasrim, SKom.</h4>
+                        <div class="position">Asesor BRF</div>
+                        <div class="role">Guru Produktif BRF</div>
+                        <div class="team-socials">
+                            <a href="#">in</a>
+                            <a href="#">✉</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <div class="team-photo">
+                        <div class="avatar-placeholder">👩‍🍳</div>
+                    </div>
+                    <div class="team-info">
+                        <h4>Harsa, S.Pd</h4>
+                        <div class="position">Asesor DKV</div>
+                        <div class="role">Guru Produktif DKV</div>
+                        <div class="team-socials">
+                            <a href="#">in</a>
+                            <a href="#">✉</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <div class="team-photo">
+                        <div class="avatar-placeholder">👨‍🔧</div>
+                    </div>
+                    <div class="team-info">
+                        <h4>H. Jumadil, S.Pd.,M.Pd></h4>
+                        <div class="position">Asesor Kriya Kayu</div>
+                        <div class="role">Guru Produktif Kriya Kayu</div>
+                        <div class="team-socials">
+                            <a href="#">in</a>
+                            <a href="#">✉</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <div class="team-photo">
+                        <div class="avatar-placeholder">👨‍💼</div>
+                    </div>
+                    <div class="team-info">
+                        <h4>Malino, S.Kom</h4>
+                        <div class="position">Pengelola TUK</div>
+                        <div class="role">Koordinator Lab</div>
+                        <div class="team-socials">
+                            <a href="#">in</a>
+                            <a href="#">✉</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== KONTAK KAMI ==================== -->
+    <section class="contact" id="kontak">
+        <div class="container">
+            <div class="section-title">
+                <h2>Kontak Kami</h2>
+                <p>Hubungi kami untuk informasi lebih lanjut mengenai pendaftaran dan sertifikasi</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Informasi Kontak</h3>
+                    <p>Jangan ragu untuk menghubungi kami. Tim kami siap membantu Anda dalam proses sertifikasi
+                        kompetensi.</p>
+
+                    <div class="contact-item">
+                        <div class="contact-item-icon">📍</div>
+                        <div class="contact-item-text">
+                            <h4>Alamat</h4>
+                            <p>Jl. Kijang, Rahandouna, Kec. Poasia, Kota Kendari, Sulawesi Tenggara
+                                93122</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-item-icon">📞</div>
+                        <div class="contact-item-text">
+                            <h4>Telepon</h4>
+                            <p>(0401) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-item-icon">📧</div>
+                        <div class="contact-item-text">
+                            <h4>Email</h4>
+                            <p>lsp@smkn4kendari.sch.id</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-item-icon">⏰</div>
+                        <div class="contact-item-text">
+                            <h4>Jam Operasional</h4>
+                            <p>Senin - Jumat: 08.00 - 16.00 WITA<br>Sabtu: 08.00 - 12.00 WITA</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <h3>Kirim Pesan</h3>
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Nama Lengkap</label>
+                                <input type="text" placeholder="Masukkan nama lengkap">
+                            </div>
+                            <div class="form-group">
+                                <label>Email</label>
+                                <input type="email" placeholder="Masukkan email">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Subjek</label>
+                            <select>
+                                <option value="">-- Pilih Subjek --</option>
+                                <option>Informasi Sertifikasi</option>
+                                <option>Pendaftaran Uji Kompetensi</option>
+                                <option>Jadwal Uji Kompetensi</option>
+                                <option>Lainnya</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Pesan</label>
+                            <textarea placeholder="Tulis pesan Anda di sini..."></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">📨 Kirim Pesan</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <img src="img/logo.png" alt="Logo" style="height:60px;">
+                        <h3>LSP-P1 SMKN 4 Kendari</h3>
+                    </div>
+                    <p>
+                        Lembaga Sertifikasi Profesi Pihak Pertama yang berkomitmen menghasilkan tenaga kerja kompeten
+                        dan bersertifikat BNSP sesuai standar kompetensi kerja nasional Indonesia.
+                    </p>
+                </div>
+                <div>
+                    <h4>Menu</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#tentang">Tentang Kami</a></li>
+                        <li><a href="#skema">Skema Sertifikasi</a></li>
+                        <li><a href="#team">Galeri Team</a></li>
+                        <li><a href="#kontak">Kontak Kami</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Skema Populer</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Teknik Komputer Jaringan</a></li>
+                        <li><a href="#">Rekayasa Perangkat Lunak dan GIM</a></li>
+                        <li><a href="#">Desain Komunikasi Visual</a></li>
+                        <li><a href="#">Brocasting Dan Perfilman</a></li>
+                        <li><a href="#">Kriya</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Kontak</h4>
+                    <div class="footer-contact-item">
+                        <span>📍</span>
+                        <span>Jl. Kijang Kel.Rahandouna, Kendari</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <span>📞</span>
+                        <span>(0401) 123-4567</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <span>📧</span>
+                        <span>lsp@smkn4kendari.sch.id</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <span>🌐</span>
+                        <span>www.smkn4kendari.sch.id</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 LSP-P1 SMKN 4 Kendari. All Rights Reserved. | Terlisensi oleh BNSP</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==================== LOGIN MODAL ==================== -->
+    <div class="login-overlay" id="loginOverlay">
+        <div class="login-box">
+            <button class="login-close" onclick="closeLogin()">✕</button>
+            <div class="login-logo">
+                <img src="img/logo.png" alt="Logo" style="height:60px;">
+                <h3>Login LSP-P1</h3>
+                <p>Silakan masuk ke akun Anda</p>
+            </div>
+            <form>
+                <div class="form-group">
+                    <label>Username / NIS / NIP</label>
+                    <input type="text" placeholder="Masukkan username">
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" placeholder="Masukkan password">
+                </div>
+                <button type="submit" class="btn-submit">🔐 Masuk</button>
+            </form>
+            <div class="forgot-password">
+                <a href="#">Lupa Password?</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== SCROLL TO TOP ==================== -->
+    <button class="scroll-top" id="scrollTop" onclick="scrollToTop()">↑</button>
+
+    <!-- ==================== JAVASCRIPT ==================== -->
+
+
+</body>
+
+</html>
